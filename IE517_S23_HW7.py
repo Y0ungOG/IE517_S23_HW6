@@ -19,7 +19,7 @@ x = df.iloc[:,:-1].values
 y = df['DEFAULT'].values
 result_in = []
 result_out = []
-n_estimators_values = [5]
+n_estimators_values = [5,25,50,75,100]
 
 for random_state in range(1,11):
     x_train, x_test , y_train, y_test = train_test_split(x,y,test_size = 0.1,random_state = random_state)
